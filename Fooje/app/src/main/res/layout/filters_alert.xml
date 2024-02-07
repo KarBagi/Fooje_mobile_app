@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_rectangle_with_black_stroke"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/redTopRectangle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="@drawable/red_top_rectangle"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/close_photo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rectangle_with_black_stroke"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Filtrowanie"
+                    android:textColor="@color/black"
+                    android:textSize="40dp"
+                    android:fontFamily="@font/markazi_text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Odległość:"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/markazi_text"
+                    android:textColor="@color/black"
+                    />
+
+                <Spinner
+                    android:id="@+id/distanceSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rodzaj jedzenia:"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/markazi_text"
+                    android:textColor="@color/black"
+                    />
+
+                <Spinner
+                    android:id="@+id/foodTypeSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="30dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Zwierzęta"
+                    android:layout_weight="3"
+                    android:textSize="20dp" />
+
+                <Switch
+                    android:id="@+id/animalsSwitch"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="20dp"
+                    android:thumb="@drawable/animal_photo"
+                    android:track="@drawable/switch_background_change"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="30dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Toaleta"
+                    android:layout_weight="3"
+                    android:textSize="20dp" />
+
+                <Switch
+                    android:id="@+id/toiletSwitch"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="20dp"
+                    android:thumb="@drawable/bathroom_photo"
+                    android:track="@drawable/switch_background_change"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="30dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Parking"
+                    android:layout_weight="3"
+                    android:textSize="20dp" />
+
+                <Switch
+                    android:id="@+id/carParkSwitch"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="20dp"
+                    android:thumb="@drawable/car_pgoto"
+                    android:track="@drawable/switch_background_change"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saveFilterButton"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="30dp"
+                android:background="@drawable/red_rectangle_with_stroke" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Zapisz"
+                    android:fontFamily="@font/markazi_text"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

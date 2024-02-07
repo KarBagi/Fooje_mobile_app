@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_rectangle_with_black_stroke"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/redTopRectangle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="@drawable/red_top_rectangle"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/close_photo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rectangle_with_black_stroke"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Rejestracja"
+                    android:textColor="@color/black"
+                    android:textSize="40dp"
+                    android:fontFamily="@font/markazi_text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Imię:"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/markazi_text"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/nameTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="text"
+                    android:hint="Imię"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nazwisko:"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/markazi_text"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/surnameTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="text"
+                    android:hint="Nazwisko"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="E-mail:"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/markazi_text"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/emailTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="text"
+                    android:hint="E-mail"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hasło:"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/markazi_text"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/passwordTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="textPassword"
+                    android:hint="Hasło"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Powtórz hasło:"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/markazi_text"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/passwordAgainTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="textPassword"
+                    android:hint="Hasło"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Numer telefonu:"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/markazi_text"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/phoneNumberTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:inputType="number"
+                    android:hint="Numer telefonu"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:paddingHorizontal="30dp"
+                android:background="@drawable/red_rectangle_with_stroke"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Zarejestruj się"
+                    android:fontFamily="@font/markazi_text"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

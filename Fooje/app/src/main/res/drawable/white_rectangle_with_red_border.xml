@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@android:color/white" />
+    <corners android:radius="20dp" /> <!-- Ustaw żądany promień zaokrąglenia -->
+    <stroke
+        android:width="20dp"
+        android:color="#A71D1D" />
+</shape>
+
