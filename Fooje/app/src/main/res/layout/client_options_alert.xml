@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="100dp"
+    android:background="@drawable/red_rectangle_with_stroke">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/markazi_text"
+                android:text="Zalogowany jako:"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/markazi_text"
+                android:text="Karol"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/clientMenuCloseButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/close_photo" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/favoritesButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/orange_rectangle_with_stroke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30dp">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:background="@drawable/favorite_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/markazi_text"
+                android:text="Ulubione"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bucketButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/orange_rectangle_with_stroke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30dp">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bucket_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/markazi_text"
+                android:text="Wyświetl koszyk"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/historyButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/orange_rectangle_with_stroke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30dp">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:background="@drawable/history_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/markazi_text"
+                android:text="Historia zamówień"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editProfileButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/orange_rectangle_with_stroke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30dp">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/markazi_text"
+                android:text="Edytuj profil"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/orange_rectangle_with_stroke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="30dp">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logout_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/markazi_text"
+                android:text="Wyloguj się"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

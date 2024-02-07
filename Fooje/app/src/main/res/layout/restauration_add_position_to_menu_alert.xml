@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_rectangle_with_black_stroke"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/redTopRectangle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="@drawable/red_top_rectangle"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/close_photo" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_rectangle_with_black_stroke"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Nazwa pozycji"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/menuPositionNameTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:hint="name Example"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Cena pozycji"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/menuPositionPriceTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:hint=""
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Waga"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/menuPositionWeightTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:hint=""
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Opis pozycji"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:id="@+id/menuPositionDescriptionTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:gravity="center|left|top"
+                    android:ems="15"
+                    android:inputType="text"
+                    android:hint="Description Example"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Składniki i wartości odżywcze"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:id="@+id/menuPositionIngredientsTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:gravity="center|left|top"
+                    android:ems="15"
+                    android:inputType="text"
+                    android:hint="Ingredients Example"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Gramatura na całe danie"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Tłuszcz:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/fatTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Węglowodany:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/carbonTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Cukier:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/sugarTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Białko:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/proteinTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Sól:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/saltTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/markazi_text"
+                    android:text="Błonnik:"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/fiberTextEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="2"
+                    android:inputType="text"
+                    android:background="@drawable/login_password_rectangle"
+                    android:padding="10dp"
+                    android:fontFamily="@font/markazi_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addPositionToMenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginBottom="20dp"
+                android:paddingHorizontal="30dp"
+                android:background="@drawable/red_rectangle_with_stroke" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Dodaj pozycję to menu"
+                    android:fontFamily="@font/markazi_text"
+                    android:textSize="15dp"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
